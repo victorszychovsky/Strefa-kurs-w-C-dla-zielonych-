@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+    int main() {    
+     
+    int liczba;
+    cout << "Provide digits int: ";
+    cin >> liczba; 
+   
+    
+    while(cin.fail()) 
+    {
+       
+        cin.clear();
+        cin.ignore(99999, '\n');
+        cout << "Wpisano zle dane wpisz jeszcze raz: ";
+        cin >> liczba;
+   
+    }
+    
+    cout << "Wpisales liczbe: " << liczba;
+         return 0;
+ }   
